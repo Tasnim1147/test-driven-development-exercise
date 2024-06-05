@@ -59,10 +59,12 @@ def add(s: str) -> str:
     if s == "":
         return  str(0)
     if "-" not in s:
-        x = int(s[0])
+        start = 0
+        mid = s.index(",")
+        x = int(s[start:mid])
         print(x)
-        y = int(s[2])
+        y = int(s[mid+1:])
         print(y)
         z = x + y
         return str(z)
-    return str(7)  # TODO: Implement the function logic.
+    
