@@ -56,4 +56,5 @@ def add(s: str) -> str:
         '6'
         >>>
     """
-    return "7"  # TODO: Implement the function logic.
+
+    return str(7)  # TODO: Implement the function logic.
