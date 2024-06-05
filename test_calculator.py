@@ -20,5 +20,6 @@ def test_basic_add():
     """
     assert add("5,2") == "7", "Failed on 5+2==7"
     assert add("") == "0"
+    assert add("1,3") == "4"
     
 

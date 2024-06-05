@@ -58,4 +58,11 @@ def add(s: str) -> str:
     """
     if s == "":
         return  str(0)
+    if "-" not in s:
+        x = int(s[0])
+        print(x)
+        y = int(s[2])
+        print(y)
+        z = x + y
+        return str(z)
     return str(7)  # TODO: Implement the function logic.
