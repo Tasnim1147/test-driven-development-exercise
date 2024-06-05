@@ -56,15 +56,6 @@ def add(s: str) -> str:
         '6'
         >>>
     """
-    if s == "":
-        return  str(0)
-    if "-" not in s:
-        start = 0
-        mid = s.index(",")
-        x = int(s[start:mid])
-        print(x)
-        y = int(s[mid+1:])
-        print(y)
-        z = x + y
-        return str(z)
+    if not s: return "0"
+    return str(sum(list(map(int, s.split(","))) + [0])) 
     

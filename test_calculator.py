@@ -22,5 +22,6 @@ def test_basic_add():
     assert add("") == "0"
     assert add("1,3") == "4"
     assert add("30,45") == "75"
+    assert add("20,30,45") == "95"
     
 
